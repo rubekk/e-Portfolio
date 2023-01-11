@@ -1,0 +1,205 @@
+`<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <link type="text/css" rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <!-- top section (nav bar and landing section) -->
+    <div class="top-sec" id="home">
+        <!-- nav section -->
+        <div class="nav-sec">
+            <div class="nav-left">
+                <a href="">Port<span class="yellow">folio.</span></a>
+            </div>
+            <div class="nav-right">
+                <a class="active" href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <!-- responsive nav -->
+        <div class="responsive-nav">
+            <div class="cross-btn">
+                <i class="fa-solid fa-times"></i>
+            </div>
+            <a class="active" href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#project">Project</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <!-- landing section -->
+        <div class="landing-sec">
+            <div class="landing-left" data-aos="fade-up" data-aos-duration="2000">
+                <p class="txt-1">Hello, I'm</p>
+                <h1>Amir Anwar</h1>
+                <p class="txt-2">Web Developer</p>
+                <button class="contact-btn">
+                    <a href="#contact">Contact Me<i class="fa-solid fa-arrow-right"></i></a>
+                </button>
+            </div>
+            <div class="landing-right" data-aos="fade-up" data-aos-duration="2000">
+                <img src="./imgs/amir1.png" alt="Amir Picture">
+            </div>
+        </div>
+    </div>
+
+    <!-- about section -->
+    <div class="about-sec" id="about">
+        <h1 class="sec-title">About Me</h1>
+        <div class="about-inner" data-aos="fade-up" data-aos-duration="2000">
+            <div class="about-left">
+                <div class="about-img">
+                    <img src="./imgs/amir2.png" alt="Amir Picture">
+                    <div class="img-border"></div>
+                </div>
+            </div>
+            <div class="about-right">
+                <h2>Who I Am?</h2>
+                <p class="txt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at tellus semper lacus varius suscipit. Suspendisse pulvinar, justo id scelerisque efficitur, quam augue pharetra metus, ultricies finibus elit ipsum vitae.</p>
+                <p class="txt-4">Cupiditate recusandae laudantium esse, harum animi aspernatur quisquam et delectus ipsum quam alias quaerat? Quasi hic quidem illum</p>
+                <button class="download-btn">Download Resume<i class="fa-solid fa-download"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- skills section -->
+    <div class="skills-sec" id="skills">
+        <h1 class="sec-title">My Skills</h1>
+        <div class="skills-inner" data-aos="fade-up" data-aos-duration="2000">
+            <div class="skills-left">
+                <p class="txt-5">My creative <span class="yellow">skills</span> and <span class="yellow">experiences</span></p>
+                <p class="txt-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, ratione error est recusandae consequatur, iusto illum deleniti quidem impedit, quos quaerat quis minima sequi. Cupiditate recusandae laudantium esse, harum animi aspernatur quisquam et delectus ipsum quam alias quaerat? Quasi hic quidem illum. Ad delectus natus aut hic explicabo minus quod.</p>
+            </div>
+            <div class="skills-right">
+                <div class="skill">
+                    <div class="skill-name">
+                        <p>HTML</p>
+                        <p>90%</p>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="full-bar"></div>
+                        <div class="percent-bar" id="html"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">
+                        <p>CSS</p>
+                        <p>80%</p>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="full-bar"></div>
+                        <div class="percent-bar" id="css"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">
+                        <p>JavaScript</p>
+                        <p>40%</p>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="full-bar"></div>
+                        <div class="percent-bar" id="javascript"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">
+                        <p>PHP</p>
+                        <p>50%</p>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="full-bar"></div>
+                        <div class="percent-bar" id="php"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">
+                        <p>MySQL</p>
+                        <p>50%</p>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="full-bar"></div>
+                        <div class="percent-bar" id="mysql"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- projects section -->
+    <div class="projects-sec" id="projects">
+        <h1 class="sec-title">Projects</h1>
+        <div class="projects-inner" data-aos="zoom-in-down" data-aos-duration="2000">
+            <div class="projects-box">
+                <div class="project" id="project-1"></div>
+                <div class="project" id="project-2"></div>
+                <div class="project" id="project-3"></div>
+                <div class="project" id="project-4"></div>
+                <div class="project" id="project-5"></div>
+                <div class="project" id="project-6"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- contact section -->
+    <div class="contact-sec" id="contact">
+        <h1 class="sec-title">Contact Me</h1>
+        <div class="contact-inner">
+            <div class="contact-left">
+                <p class="txt-7">Message Me</p>
+                <form>
+                    <div class="row">
+                        <input type="text" placeholder="Name" required>
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="row">
+                        <input type="text" placeholder="Subject" required>
+                    </div>
+                    <div class="row">
+                        <textarea placeholder="Message" required></textarea>
+                    </div>
+                    <button class="message-btn">Send Message<i class="fa-solid fa-arrow-right"></i></button>
+                </form>
+            </div>
+            <div class="line"></div>
+            <div class="contact-right">
+                <p class="txt-8">Get in Touch</p>
+                <p class="txt-9">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos harum corporis fuga corrupti. Doloribus quis soluta nesciunt veritatis vitae nobis?</p>
+                <div class="contact-name">
+                    <p><i class="fa-solid fa-user"></i>Amir Anwar</p>
+                </div>
+                <div class="contact-address">
+                    <p><i class="fa-solid fa-location-dot"></i>Kuantan, Pahang</p>
+                </div>
+                <div class="contact-email">
+                    <p><i class="fa-solid fa-at"></i>amiyer1803@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer section -->
+    <div class="footer">
+        <p>Created by <span class="yellow">Rubek</span> | <i class=""></i> 2022 All Right Reserved.</p>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
