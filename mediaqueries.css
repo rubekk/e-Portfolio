@@ -195,3 +195,8 @@
         grid-template: repeat(12, 100px) / repeat(1,150px);
     }
 }
+@media (min-width: 630px){
+    .responsive-nav{
+        display: none;
+    }
+}

@@ -61,7 +61,7 @@ button{
     width: 100vw;
     height: 100vh;
     background-color: #1a1a1a;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     display: flex;
@@ -78,12 +78,15 @@ button{
 }
 .cross-btn{
     position: absolute;
-    top: 2rem;
-    right: 2rem;
+    top: 3rem;
+    right: 3rem;
     cursor: pointer;
 }
 .cross-btn i{
     font-size: 1.2rem;
+}
+.activee{
+    display: flex;
 }
 
 /* landing section */
@@ -426,4 +429,46 @@ textarea{
 .footer p{
     text-align: center;
     margin-bottom: 1rem;
+}
+
+/* top button */
+.top-btn{
+    display: none;
+    padding: .5rem .75rem;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    border: 2px solid #F4FA1A;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.top-btn:hover{
+    background: #F4FA1A;
+    border: 2px solid #fff;
+    transition: .3s;
+}
+.top-btn:hover i{
+    color: #1a1a1a;
+}
+
+/* scrollbar */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #F4FA1A;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #929703;
 }
